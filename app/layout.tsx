@@ -25,24 +25,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} antialiased h-screen flex flex-col align-center`}
+        className={`${playfairDisplay.variable} antialiased h-screen flex flex-col`}
       >
-        <header className="text-gray-800 p-4 shadow-md bg-gray-50 font-serif flex gap-5 ">
-          <h1 className="font-bold">Children Stories</h1>
-          <nav className="">
+        <header className="p-4 shadow-md bg-gray-50 font-serif flex gap-5 items-baseline">
+          <h1 className="font-bold">
+            <Link href="/" className="text-gray-800 hover:underline">
+              Children Stories
+            </Link>
+          </h1>
+          <nav className="hidden md:block text-gray-600">
             {listOfBooks.map(([id, book]) => (
               <Link key={id} href={`/${id}/1`} className="hover:underline">
                 {book.title}
               </Link>
             ))}
           </nav>
-
-          <Link href="https://www.alexanderhorner.com" className="text-gray-500 hover:underline text-sm ml-auto">
-            Made by Alexander Horner
-          </Link>
         </header>
 
         {children}
+
+        
+        <footer className="text-gray-500 p-4 shadow-md bg-gray-50 font-serif text-sm text-center">
+          Made by <Link href="https://www.alexanderhorner.com" className="hover:underline">Alexander Horner</Link> © 2025
+        </footer>
       </body>
     </html>
   );

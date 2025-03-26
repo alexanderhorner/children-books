@@ -4,10 +4,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] gap-4">
-      {Object.entries(library).map(([id, book]) => (
-        <BookCard key={id} title={book.title} cover={book.cover} id={id} />
-      ))}
+    <div className="flex-1">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] gap-4">
+        {Object.entries(library).map(([id, book]) => (
+          <BookCard key={id} title={book.title} cover={book.cover} id={id} />
+        ))}
+      </div>
     </div>
   );
 }

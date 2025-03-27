@@ -30,6 +30,7 @@ export default async function Page({
           src={pageData.image} 
           alt="Story image" 
           className="object-cover h-full w-full" 
+          placeholder="blur"
         />
       </div>
 

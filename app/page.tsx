@@ -17,7 +17,7 @@ export default function Home() {
 
 const BookCard = ({ title, cover, id }: { title: string; cover: StaticImageData; id: string }) => (
   <Link href={`/${id}/1`} className="shadow-md rounded-lg m-4 flex flex-col gap-4 overflow-hidden">
-    <Image src={cover} alt={title} />
+    <Image src={cover} alt={title} placeholder="blur"/>
   </Link>
 );
 

@@ -1,30 +1,30 @@
 import { StaticImageData } from "next/image";
 
 // Bunny images
-import BunnyThumbnail from "./images/bunny/thumbnail.png";
-import Bunny1 from "./images/bunny/panel1.png";
-import Bunny2 from "./images/bunny/panel2.png";
-import Bunny3 from "./images/bunny/panel3.png";
-import Bunny4 from "./images/bunny/panel4.png";
-import Bunny5 from "./images/bunny/panel5.png";
-import Bunny6 from "./images/bunny/panel6.png";
-import Bunny7 from "./images/bunny/panel7.png";
-import Bunny8 from "./images/bunny/panel8.png";
-import Bunny9 from "./images/bunny/panel9.png";
-import Bunny10 from "./images/bunny/panel10.png";
+import BunnyThumbnail from "./images/bunny/thumbnail.jpg";
+import Bunny1 from "./images/bunny/panel1.jpg";
+import Bunny2 from "./images/bunny/panel2.jpg";
+import Bunny3 from "./images/bunny/panel3.jpg";
+import Bunny4 from "./images/bunny/panel4.jpg";
+import Bunny5 from "./images/bunny/panel5.jpg";
+import Bunny6 from "./images/bunny/panel6.jpg";
+import Bunny7 from "./images/bunny/panel7.jpg";
+import Bunny8 from "./images/bunny/panel8.jpg";
+import Bunny9 from "./images/bunny/panel9.jpg";
+import Bunny10 from "./images/bunny/panel10.jpg";
 
 // Animal Friends images
-import AnimalFriendsThumbnail from "./images/animal-friends/thumbnail.png";
-import AnimalFriends1 from "./images/animal-friends/panel1.png";
-import AnimalFriends2 from "./images/animal-friends/panel2.png";
-import AnimalFriends3 from "./images/animal-friends/panel3.png";
-import AnimalFriends4 from "./images/animal-friends/panel4.png";
-import AnimalFriends5 from "./images/animal-friends/panel5.png";
-import AnimalFriends6 from "./images/animal-friends/panel6.png";
-import AnimalFriends7 from "./images/animal-friends/panel7.png";
-import AnimalFriends8 from "./images/animal-friends/panel8.png";
-import AnimalFriends9 from "./images/animal-friends/panel9.png";
-import AnimalFriends10 from "./images/animal-friends/panel10.png";
+import AnimalFriendsThumbnail from "./images/animal-friends/thumbnail.jpg";
+import AnimalFriends1 from "./images/animal-friends/panel1.jpg";
+import AnimalFriends2 from "./images/animal-friends/panel2.jpg";
+import AnimalFriends3 from "./images/animal-friends/panel3.jpg";
+import AnimalFriends4 from "./images/animal-friends/panel4.jpg";
+import AnimalFriends5 from "./images/animal-friends/panel5.jpg";
+import AnimalFriends6 from "./images/animal-friends/panel6.jpg";
+import AnimalFriends7 from "./images/animal-friends/panel7.jpg";
+import AnimalFriends8 from "./images/animal-friends/panel8.jpg";
+import AnimalFriends9 from "./images/animal-friends/panel9.jpg";
+import AnimalFriends10 from "./images/animal-friends/panel10.jpg";
 
 interface Page {
   text: string;

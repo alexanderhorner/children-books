@@ -14,8 +14,6 @@ export default async function Page({
   params: Promise<Params>;
 }) {
   const { book, page } = await params;
-  
-  console.log(book, page, typeof page);
 
   const currentPage = Number(page);
   const pageData = library[book].pages[currentPage - 1];
@@ -103,4 +101,14 @@ export async function generateMetadata(
       ],
     },
   };
+}
+
+export async function generateStaticParams() {
+  const params = [];
+  for (const book in library) {
+    for (let i = 1; i <= library[book].pages.length; i++) {
+      params.push({ book, page: i.toString() });
+    }
+  }
+  return params;
 }

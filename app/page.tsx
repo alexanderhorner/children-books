@@ -1,6 +1,7 @@
 import { library } from "./[book]/[page]/library";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
@@ -19,3 +20,8 @@ const BookCard = ({ title, cover, id }: { title: string; cover: StaticImageData;
     <Image src={cover} alt={title} />
   </Link>
 );
+
+export const metadata: Metadata = {
+  title: "Children Stories",
+  description: "A collection of children's books",
+}

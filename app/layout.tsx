@@ -30,10 +30,10 @@ export default function RootLayout({
         <header className="p-4 shadow-md bg-gray-50 font-serif flex gap-5 items-baseline">
           <h1 className="font-bold">
             <Link href="/" className="text-gray-800 hover:underline">
-              Children Stories
+              🦊 Children Stories
             </Link>
           </h1>
-          <nav className="hidden md:block text-gray-600">
+          <nav className="hidden md:flex text-gray-600 gap-3">
             {listOfBooks.map(([id, book]) => (
               <Link key={id} href={`/${id}/1`} className="hover:underline">
                 {book.title}

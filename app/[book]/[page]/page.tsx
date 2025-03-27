@@ -1,14 +1,17 @@
 import { library } from './library';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+interface Params {
+  book: string;
+  page: string;
+}
 
 export default async function Page({
   params,
 }: {
-  params: Promise<{ 
-    book: string,
-    page: string,
-  }>;
+  params: Promise<Params>;
 }) {
   const { book, page } = await params;
   
@@ -78,4 +81,26 @@ export default async function Page({
 
     </div>
   );
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<Params> }
+): Promise<Metadata>  {
+  const { book, page } = await params;
+  const currentPage = Number(page);
+  const pageData = library[book].pages[currentPage - 1];
+
+  return {
+    title: `${library[book].title} - Page ${currentPage}`,
+    description: pageData.text,
+    openGraph: {
+      type: 'website',
+      images: [
+        {
+          url: pageData.image.src,
+          alt: library[book].title,
+        },
+      ],
+    },
+  };
 }

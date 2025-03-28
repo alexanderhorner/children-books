@@ -36,7 +36,7 @@ export default async function Page({
 
       {/* Text Section */}
       <div className="p-8 text-center md:flex md:items-center font-serif flex flex-col justify-center">
-        <p className="text-gray-600 mb-4">
+        <p className="text-sky-900 mb-4">
           Page {currentPage} of {library[book].pages.length}
         </p>
         
@@ -47,14 +47,14 @@ export default async function Page({
           {hasPreviousPage ? (
             <Link 
               href={`/${book}/${currentPage - 1}`} 
-              className="border border-gray-400 shadow-sm rounded-md bg-white text-gray-800 px-4 py-2 hover:bg-gray-100"
+              className="bg-sky-900 shadow-sm rounded-md text-white px-4 py-2 hover:bg-sky-800"
             >
               Previous
             </Link>
           ) : (
             <Link 
               href="/" 
-              className="border border-gray-400 shadow-sm rounded-md bg-white text-gray-800 px-4 py-2 hover:bg-gray-100"
+              className="bg-sky-900 shadow-sm rounded-md text-white px-4 py-2 hover:bg-sky-800"
             >
               Back to Home
             </Link>
@@ -63,14 +63,14 @@ export default async function Page({
           {hasNextPage ? (
             <Link 
               href={`/${book}/${currentPage + 1}`} 
-              className="border border-gray-400 shadow-sm rounded-md bg-white text-gray-800 px-4 py-2 hover:bg-gray-100"
+              className="bg-sky-900 shadow-sm rounded-md text-white px-4 py-2 hover:bg-sky-800"
             >
               Next
             </Link>
           ) : (
             <Link 
               href="/" 
-              className="border border-gray-400 shadow-sm rounded-md bg-white text-gray-800 px-4 py-2 hover:bg-gray-100"
+              className="bg-sky-900 shadow-sm rounded-md text-white px-4 py-2 hover:bg-sky-800"
             >
               Return to Home
             </Link>

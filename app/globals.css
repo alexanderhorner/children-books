@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+
 @theme inline {
   --font-serif: var(--font-playfair-display);
+  --color-egg-sour-50: #fff9ed;
+  --color-egg-sour-100: #fff4dc;
+  --color-egg-sour-200: #fee1aa;
+  --color-egg-sour-300: #fdca74;
+  --color-egg-sour-400: #fba83c;
+  --color-egg-sour-500: #f98d16;
+  --color-egg-sour-600: #ea710c;
+  --color-egg-sour-700: #c2560c;
+  --color-egg-sour-800: #9a4412;
+  --color-egg-sour-900: #7c3912;
+  --color-egg-sour-950: #431b07;
+  --color-brown-900: #633e13;
+}
+
+html, body {
+  background-color: var(--color-egg-sour-50);
+  color: var(--color-brown-900);
 }

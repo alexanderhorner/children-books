@@ -31,6 +31,7 @@ export default async function Page({
           alt="Story image" 
           className="object-cover h-full w-full" 
           placeholder="blur"
+          priority
         />
       </div>
 
